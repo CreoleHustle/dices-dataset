@@ -83,5 +83,6 @@ df.drop_duplicates(subset="rater_id")
 40. `Q6_policy_guidelines_overall`: “Yes”, “No”, “Unsure” whether the rater perceives the last chatbot response in a conversation to be unsafe, aggregated from all "Q6" questions.
 41. `Q_overall`: “Yes”, “No”, “Unsure” aggregated safety of a conversation from all rater answers in questions Q2-Q6, excluding Q1_whole_conversation_evaluation.
 
-
-
+## Removed raters ##
+In some analyses, we remove raters for failing data quality checks. In all instances where this was the case, the following raters were removed from the DICES-350 dataset:
+`removed_raters_350 = ['297514565398139', '297515609163939', '297515750682315', '297515617432733', '297541515566649', '297541515769980', '297515629971478', '297059995361243', '297541522412126', '297540556928761', '297541321453321', '297540562350921', '297540983991638', '297060365288109', '297514543980607', '297515729806999', '297541271027233', '296709611112092', '296709543131761']`
