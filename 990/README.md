@@ -84,3 +84,7 @@ df.drop_duplicates(subset="rater_id")
 41. `Q3_bias_overall`: “Yes”, “No”, “Unsure” whether the rater perceives the last dialog model response in the conversation to be unsafe aggregated from all of the other "Q3" ratings.
 42. `Q4_misinformation_overall`: “Yes”, “No”, “Unsure” whether the rater perceives the last dialog model response in the conversation to be unsafe, aggregated from all of the other "Q4" ratings.
 43. `Q_overall`: “Yes”, “No”, “Unsure” whether the rater perceives the last dialog model response in the conversation to be unsafe, aggregated from all of the ratings (i.e., columns beginning with "Q").
+
+## Removed raters ##
+In some analyses, we remove raters for failing data quality checks. In all instances where this was the case, the following raters were removed from the DICES-350 dataset:
+`removed_raters_990 = ['296768824962581', '296740172100277', '296729424498056', '296835612486158', '297212198239077', '296740254381555', '296740049152799', '297212002905763', '296740761150184', '296708974347177', '296770194464643', '296768399729683']`
